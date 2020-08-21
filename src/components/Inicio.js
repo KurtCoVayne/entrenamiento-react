@@ -51,4 +51,4 @@ function Inicio() {
     );
 }
 
-export default App;
+export default Inicio;
