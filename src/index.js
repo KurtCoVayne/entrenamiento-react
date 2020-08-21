@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
-import InicioSesion from './components/InicioSesion'
-import Registro from './components/Registro';
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Routes from './components/Routes';
+import history from './services/history';
 
 ReactDOM.render(
   <React.StrictMode>
-    <InicioSesion />
+    <Router history={history} >
+      <Routes/>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
